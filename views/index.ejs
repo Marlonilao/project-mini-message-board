@@ -9,7 +9,7 @@
     <h1>Mini Message Board</h1>
     <ul>
         <% messages.forEach((message) => {%>
-            <%- include('message', {user: message.user, message: message.text, added: message.added.toDateString()}) %>
+            <%- include('message', {user: message.user, message: message.text, id: message.id}) %>
         <%});%>
     </ul>
     <a href="/new">Add new message</a>

@@ -7,6 +7,7 @@ const getForm = (req, res) => {
 const addMessage = (req, res) => {
   const { text, user } = req.body;
   const newMessage = {
+    id: messages.length + 1,
     text: text,
     user: user,
     added: new Date(),
