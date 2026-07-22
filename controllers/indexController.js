@@ -16,5 +16,6 @@ const getMessages = (req, res) => {
 };
 
 module.exports = {
+  messages,
   getMessages,
 };
