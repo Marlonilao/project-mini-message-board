@@ -1,12 +1,32 @@
-<h2>Create New Message</h2>
-<form action="/new" method="POST">
-  <div>
-    <label for="user">Your Name:</label>
-    <input type="text" id="user" name="user" required />
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="card" style="width: 50%; margin: 0 auto;">
+      <div class="card-header">
+        <h2 class="mb-0">Create New Message</h2>
+      </div>
+      <div class="card-body">
+        <form action="/new" method="POST">
+          <div class="mb-3">
+            <label for="user" class="form-label">Your Name:</label>
+            <input type="text" id="user" name="user" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label">Message:</label>
+            <textarea id="text" name="text" class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
   </div>
-  <div>
-    <label for="text">Message:</label>
-    <textarea id="text" name="text" required></textarea>
-  </div>
-  <button type="submit">Send Message</button>
-</form>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

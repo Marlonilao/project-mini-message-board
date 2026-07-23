@@ -1,7 +1,7 @@
-<li>
-  <div>
-    <p>User: <%= user %></p>
-    <p>Message: <%= message %></p>
-    <a href="/messages/<%=id%>">Open</a>
+<li class="list-group-item">
+  <div class="card-body">
+    <h5 class="card-title"><%= user %></h5>
+    <p class="card-text"><%= message %></p>
+    <a href="/messages/<%=id%>" class="btn btn-primary">Open</a>
   </div>
 </li>

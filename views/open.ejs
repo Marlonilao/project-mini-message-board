@@ -1,5 +1,20 @@
-<div>
-  <p>User: <%= user %></p>
-  <p>Message: <%= message %></p>
-  <p>Date: <%= added %></p>
-</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title"><strong><%= user %></strong></h5>
+      <p class="card-text"><%= message %></p>
+      <small class="text-muted"><%= added %></small>
+      <br>
+      <a href="/" class="text-decoration-none mt-2 d-inline-block">← Back</a>
+    </div>
+  </div>
+</body>
+
+</html>
